@@ -1,5 +1,63 @@
-html {
+@font-face {
+    font-family: Norse-Bold;
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
 }
+
+body {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar-left {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* height: 100%; */
+}
+
+.sidebar-left h1 {
+    font-family: Norse-Bold, sans-serif;
+    font-size: 128px;
+    font-weight: bold;
+    margin-bottom: 400px;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a, a:hover, a:visited {
+    color: white;
+}
+
+.credit {
+    justify-self: flex-end;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.sidebar-right {
+    margin: 0;
+    padding: 50px;
+    border: 2px solid black;
+    width: 50%;
+}
+
